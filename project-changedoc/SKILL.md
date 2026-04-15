@@ -13,11 +13,17 @@ Check if parameters are passed and follow the instructions described in the foll
 
 Make sure that you are in a git repository.
 
-If you are not in a git repository, stop here and inform the user about what you expect.
-
 If you are in a git repository, consider the git history of the current branch and use the first commit as the initial project and the final commit as the final project.
 
-Describes the changes following the commits in the history. 
+Describe the changes following the commits in the history. 
+
+### One parameter passed
+
+Make sure that the parameter passed by the user is the URL to a git repository, for example, the URL to a GitHub repository.
+
+Consider the git history of the main branch or the branch specified by the user. Use the first commit as the initial project and the final commit as the final project.
+
+Describe the changes following the commits in the history. 
 
 ### Two parameters passed
 
@@ -28,6 +34,10 @@ If the user does not pass exactly two parameters, tell them that you need the pa
 Make sure that the two parameters passed by the user are relative or absolute folder paths.
 
 You will refer to the first folder as the initial project and to the second folder as the finnal project.
+
+### Otherwise
+
+Stop here and inform the user about what you expect as parameters.
 
 ## Instructions
 
